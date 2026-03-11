@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Advanced Snake Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🐍 Advanced Snake Game</h1>
+
+<div class="scoreboard">
+<div>Score : <span id="score">0</span></div>
+<div>High Score : <span id="highScore">0</span></div>
+</div>
+
+<canvas id="gameCanvas" width="500" height="500"></canvas>
+
+<div class="buttons">
+<button onclick="startGame()">Start</button>
+<button onclick="pauseGame()">Pause</button>
+<button onclick="restartGame()">Restart</button>
+</div>
+
+<div class="controls">
+<p>Use Arrow Keys to Control Snake</p>
+<p>Eat Food to Grow & Increase Score</p>
+</div>
+
+<div id="gameOverScreen" class="gameOver">
+<h2>Game Over</h2>
+<p>Your Score: <span id="finalScore"></span></p>
+<button onclick="restartGame()">Play Again</button>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
